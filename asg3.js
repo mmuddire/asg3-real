@@ -458,6 +458,7 @@ function renderAllShapes(){
     head.render([0.6, 0.25, 0.035, 1]);
 
     var ear1 = new Pyramid();
+    ear1.textureNum = -2;
     ear1.color = [0.439, 0.231, 0.055, 1];
     ear1.matrix = headCoord1;
     ear1.matrix.translate(.05, .35, 0.15);
@@ -466,6 +467,7 @@ function renderAllShapes(){
     ear1.render();
 
     var ear2 = new Pyramid();
+    ear2.textureNum = -2;
     ear2.color = [0.439, 0.231, 0.055, 1];
     ear2.matrix = headCoord2;
     ear2.matrix.translate(.35, .35, 0.15);
@@ -474,12 +476,14 @@ function renderAllShapes(){
     ear2.render();
 
     var body = new Cube();
+    body.textureNum = -2;
     body.matrix.translate(targetX + 0.4, -0.4, targetZ - 0.1); // Position slightly offset from head
     body.matrix.rotate(90, 0, 0, 1);
     body.matrix.scale(0.5, 1, 0.6);
     body.render([0.6, 0.25, 0.035, 1]);
 
     var nose = new Pyramid();
+    nose.textureNum = -2;
     nose.color = [0.0, 0.0, 0.0, 1.0];
     nose.matrix = headCoord3;
     nose.matrix.translate(.21, .17, -0.001);
@@ -488,6 +492,7 @@ function renderAllShapes(){
     nose.render();
 
     var leftFront1 = new Cube();
+    leftFront1.textureNum = -2;
     leftFront1.matrix.setTranslate(targetX + 0.3, -0.25, targetZ);
     leftFront1.matrix.rotate(210, 0, 0, 1);
     var leftFCoord = new Matrix4(leftFront1.matrix);
@@ -495,6 +500,7 @@ function renderAllShapes(){
     leftFront1.render([0.471, 0.31, 0.176, 1]);
 
     var leftFront2 = new Cube();
+    leftFront2.textureNum = -2;
     leftFront2.matrix = leftFCoord;
     leftFront2.matrix.translate(0, 0.3, 0.001);
     leftFront2.matrix.rotate(0, 0, 0, 1);
@@ -502,6 +508,7 @@ function renderAllShapes(){
     leftFront2.render([0.922, 0.871, 0.827, 1]);
 
     var leftFPaw = new Cylinder();
+    leftFPaw.textureNum = -2;
     leftFPaw.color = [0.341, 0.173, 0.035, 1.0];
     leftFPaw.matrix = leftFCoord;
     leftFPaw.matrix.translate(0, 0.99, 0.7);
@@ -510,6 +517,7 @@ function renderAllShapes(){
     leftFPaw.render();
 
     var leftBack1 = new Cube();
+    leftBack1.textureNum = -2;
     leftBack1.matrix.setTranslate(targetX - 0.4, -0.25, targetZ);
     leftBack1.matrix.rotate(210, 0, 0, 1);
     var leftBCoord = new Matrix4(leftBack1.matrix);
@@ -517,6 +525,7 @@ function renderAllShapes(){
     leftBack1.render([0.471, 0.31, 0.176, 1]);
 
     var leftBack2 = new Cube();
+    leftBack2.textureNum = -2;
     leftBack2.matrix = leftBCoord;
     leftBack2.matrix.translate(0, 0.3, 0.001);
     leftBack2.matrix.rotate(0, 0, 0, 1);
@@ -524,6 +533,7 @@ function renderAllShapes(){
     leftBack2.render([0.922, 0.871, 0.827, 1]);
 
     var leftBPaw = new Cylinder();
+    leftBPaw.textureNum = -2;
     leftBPaw.color = [0.341, 0.173, 0.035, 1.0];
     leftBPaw.matrix = leftBCoord;
     leftBPaw.matrix.translate(0, 0.99, 0.7);
@@ -533,6 +543,7 @@ function renderAllShapes(){
 
     // right
     var rightFront1 = new Cube();
+    rightFront1.textureNum = -2;
     rightFront1.matrix.setTranslate(targetX + 0.3, -0.25, targetZ + 0.5);
     rightFront1.matrix.rotate(180, 0, 0, 1);
     var rightFCoord = new Matrix4(rightFront1.matrix);
@@ -540,6 +551,7 @@ function renderAllShapes(){
     rightFront1.render([0.471, 0.31, 0.176, 1]);
 
     var rightFront2 = new Cube();
+    rightFront2.textureNum = -2;
     rightFront2.matrix = rightFCoord;
     rightFront2.matrix.translate(0, 0.3, 0.001);
     rightFront2.matrix.rotate(0, 0, 0, 1);
@@ -547,6 +559,7 @@ function renderAllShapes(){
     rightFront2.render([0.922, 0.871, 0.827, 1]);
 
     var rightFPaw = new Cylinder();
+    rightFPaw.textureNum = -2;
     rightFPaw.color = [0.341, 0.173, 0.035, 1.0];
     rightFPaw.matrix = rightFCoord;
     rightFPaw.matrix.translate(0, 0.99, 0.7);
@@ -555,6 +568,7 @@ function renderAllShapes(){
     rightFPaw.render();
 
     var rightBack1 = new Cube();
+    rightBack1.textureNum = -2;
     rightBack1.matrix.setTranslate(targetX - 0.4, -0.25, targetZ + 0.5);
     rightBack1.matrix.rotate(180, 0, 0, 1);
     var rightBCoord = new Matrix4(rightBack1.matrix);
@@ -562,6 +576,7 @@ function renderAllShapes(){
     rightBack1.render([0.471, 0.31, 0.176, 1]);
 
     var rightBack2 = new Cube();
+    rightBack2.textureNum = -2;
     rightBack2.matrix = rightBCoord;
     rightBack2.matrix.translate(0, 0.3, 0.001);
     rightBack2.matrix.rotate(0, 0, 0, 1);
@@ -569,6 +584,7 @@ function renderAllShapes(){
     rightBack2.render([0.922, 0.871, 0.827, 1]);
 
     var rightBPaw = new Cylinder();
+    rightBPaw.textureNum = -2;
     rightBPaw.color = [0.341, 0.173, 0.035, 1.0];
     rightBPaw.matrix = rightBCoord;
     rightBPaw.matrix.translate(0, 0.99, 0.7);
@@ -577,6 +593,7 @@ function renderAllShapes(){
     rightBPaw.render();
 
     var tail = new Pyramid();
+    tail.textureNum = -2;
     tail.color = [0.439, 0.231, 0.055, 1];
     tail.matrix.setTranslate(targetX - 0.7, -0.1, targetZ + 0.2);
     tail.matrix.rotate(115, 0, 0, 1);
