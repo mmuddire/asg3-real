@@ -161,6 +161,8 @@ let g_camera;
 
 let isDragging = false;
 let g_mouseR = true;
+const BASE_Y = -0.75; // Floor level
+const MAP_CENTER = 16; // Center offset for 32x32 grid
 
 //connect html to actions
 function addActionsForHtmlUI(){
@@ -183,6 +185,7 @@ function tick(){
 function keydown(ev){
     const speed = 0.2
     const degrees = 1;
+
     if (ev.keyCode == 87){ //w
         g_camera.moveForward(speed);
     } else if (ev.keyCode == 83) {
@@ -333,9 +336,6 @@ var g_map = [
 ];
 
 function drawMap() {
-    const BASE_Y = -0.75; // Floor level
-    const MAP_CENTER = 16; // Center offset for 32x32 grid
-
     for (let x = 0; x < 32; x++) {
         for (let z = 0; z < 32; z++) {
             const height = g_map[x][z];
